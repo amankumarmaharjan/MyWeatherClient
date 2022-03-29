@@ -322,7 +322,7 @@
                 $('.card').css('background-image', 'url(' + weather.image + ')');
                 $('#locationName').html(weather.name);
                 $('#status').html("Status:"+weather.cloud);
-                if(!weather.apparent_t)
+                if(!weather.apparent_t===null)
                 $('#temp').html("Temperature: "+weather.apparent_t+"°C");
                 $('#windSpeed').html("Wind Speed: "+weather.wind_spd_kmh+"km/h");
                 $('#time').html("Time Updated: "+weather.local_date_time);
